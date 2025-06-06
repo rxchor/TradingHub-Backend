@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490aa"
+  },
+  "nombre_categoria": "Electrónica",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490ab"
+  },
+  "nombre_categoria": "Moda",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490ac"
+  },
+  "nombre_categoria": "Hogar",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490ad"
+  },
+  "nombre_categoria": "Belleza",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490ae"
+  },
+  "nombre_categoria": "Salud",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490af"
+  },
+  "nombre_categoria": "Deportes",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490b0"
+  },
+  "nombre_categoria": "Juguetes",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490b1"
+  },
+  "nombre_categoria": "Alimentos",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490b2"
+  },
+  "nombre_categoria": "Mascotas",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490b3"
+  },
+  "nombre_categoria": "Oficina",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490b4"
+  },
+  "nombre_categoria": "Automoción",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490b5"
+  },
+  "nombre_categoria": "Libros",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+},
+{
+  "_id": {
+    "$oid": "682e2dd7b9295255dd8490b6"
+  },
+  "nombre_categoria": "Otros",
+  "_class": "dam.cook.tradinghub.model.entity.Categoria"
+}]

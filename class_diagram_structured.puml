@@ -1,0 +1,263 @@
+@startuml
+left to right direction
+interface BaseMapper {
+    ~entityToDto(entity: Entity): DTO
+    ~dtoToEntity(dto: DTO): Entity
+    ~entityToDtoList(entities: List<Entity>): List<DTO>
+    ~dtoToEntityList(dtos: List<DTO>): List<Entity>
+    ~{static} objectIdToString(objectId: ObjectId): String
+    ~{static} stringToObjectId(string: String): ObjectId
+}
+class BaseEntityModel {
+    -id: ObjectId
+}
+interface BaseRepository {
+}
+interface BaseService {
+    ~findAll(): List<DTO>
+    ~findById(id: String): DTO
+    ~save(dto: DTO): DTO
+    ~saveAll(dtos: List<DTO>): List<DTO>
+    ~delete(dto: DTO): void
+    ~deleteById(id: String): void
+
+}
+class BaseServiceImpl {
+    -repository: MongoRepository<Entity, ObjectId>
+    -mapper: BaseMapper<Entity, DTO>
+    -entityClass: Class<Entity>
+    +findAll(): List<DTO>
+    +findById(id: String): DTO
+    +save(dto: DTO): DTO
+    +saveAll(dtos: List<DTO>): List<DTO>
+    +delete(dto: DTO): void
+    +deleteById(id: String): void
+}
+BaseServiceImpl --|> BaseService
+
+interface CategoriaMapper {
+}
+CategoriaMapper --|> BaseMapper
+
+interface ChatMessageMapper {
+}
+ChatMessageMapper --|> BaseMapper
+
+interface PenalizacionMapper {
+    ~entityToDto(entity: Penalizacion): PenalizacionDTO
+    ~dtoToEntity(dto: PenalizacionDTO): Penalizacion
+    ~entityToDtoList(entities: List<Penalizacion>): List<PenalizacionDTO>
+    ~dtoToEntityList(dtos: List<PenalizacionDTO>): List<Penalizacion>
+}
+
+interface ProductoMapper {
+}
+ProductoMapper --|> BaseMapper
+
+interface ReporteMapper {
+}
+ReporteMapper --|> BaseMapper
+
+interface TruequeMapper {
+}
+TruequeMapper --|> BaseMapper
+
+interface UsuarioMapper {
+    ~entityToDto(entity: Usuario): UsuarioDTO
+    ~entityToDtoList(entities: List<Usuario>): List<UsuarioDTO>
+}
+UsuarioMapper --|> BaseMapper
+
+class Categoria {
+    -nombreCategoria: String
+}
+Categoria --|> BaseEntityModel
+class ChatMessage {
+    -idSender: String
+    -content: String
+    -idTrueque: String
+    -timestamp: Instant
+}
+ChatMessage --|> BaseEntityModel
+class Penalizacion {
+    -motivo: String
+    -idAdmin: String
+    -idReporte: String
+    -fechaFin: Instant
+}
+class Producto {
+    -nombre: String
+    -descripcion: String
+    -categoria: String
+    -fotos: List<String>
+    -idVendedor: String
+    -noDisponible: boolean
+}
+Producto --|> BaseEntityModel
+class Reporte {
+    -idUsuarioReportante: String
+    -usernameReportante: String
+    -idUsuarioReportado: String
+    -usernameReportado: String
+    -titulo: String
+    -descripcion: String
+    -resuelto: boolean
+    -tipoItem: String
+    -idItem: String
+    -nombreItem: String
+    -fechaCreacion: Instant
+}
+Reporte --|> BaseEntityModel
+class Trueque {
+    -idVendedor: String
+    -idInteresado: String
+    -nombreTrueque: String
+    -imagenPreview: String
+    -idsProductosVendedor: List<String>
+    -idsProductosInteresado: List<String>
+    -estado: EstadoTrueque
+}
+Trueque --|> BaseEntityModel
+class Usuario {
+    -username: String
+    -email: String
+    -password: String
+    -numeroTelefono: int
+    -administrador: boolean
+    -penalizacion: Penalizacion
+}
+Usuario --|> BaseEntityModel
+class ImageResource {
+    -filename: String
+    -mediaType: MediaType
+}
+interface CategoriaRepository {
+    +findByNombreCategoria(nombreCategoria: String): Categoria
+}
+CategoriaRepository --|> BaseRepository
+interface ChatRepository {
+    +findAllByIdTrueque(idTrueque: String): List<ChatMessage>
+}
+ChatRepository --|> BaseRepository
+
+class GridFsImageRepository {
+    -gridFsTemplate: GridFsTemplate
+    -gridFsOperations: GridFsOperations
+    +findAll(): List<ImageResource>
+    +findById(id: String): ImageResource
+    +save(file: MultipartFile): ObjectId
+    +deleteById(id: String): void
+    +getResource(id: String): GridFsResource
+}
+
+interface ProductoRepository {
+    +findByAllIdVendedor(idVendedor: String): List<Producto>
+    +findAllByNoDisponibleFalse(): List<Producto>
+    +findByCategoria(): List<Producto>
+}
+ProductoRepository --|> BaseRepository
+
+interface ReporteRepository {
+}
+ReporteRepository --|> BaseRepository
+
+interface TruequeRepository {
+    +findByAllIdVendedorOrIdInteresado(idVendedor: String, idInteresado: String): List<Trueque>
+}
+TruequeRepository --|> BaseRepository
+
+interface UsuarioRepository {
+   +findByEmail(email: String): Usuario
+}
+UsuarioRepository --|> BaseRepository
+
+class CategoriaService {
+    -categoriaRepository: CategoriaRepository
+    -categoriaMapper: CategoriaMapper
+    +findByNombre(): List<CategoriaDTO>
+}
+CategoriaService --|> BaseServiceImpl
+class ChatService {
+    -chatRepository: ChatRepository
+    -chatMessageMapper: ChatMessageMapper
+    +getChatHistory(idTrueque: String): List<ChatMessageDTO>
+}
+ChatService --|> BaseServiceImpl
+class MediaService {
+    -{static} MEDIA_TYPES: Map<String, MediaType>
+    -gridFsImageRepository: GridFsImageRepository
+    +obtenerImagen(): ImageResource
+    +guardarImagen(file: MultipartFile): String
+    +guardarImagenes(files: List<MultipartFile>): List<String>
+    +eliminarImagen(id: String): void
+    -defaultImage: ImageResource
+    -getExtension(filename: String): String
+}
+class ProductoService {
+    -productoRepository: ProductoRepository
+    -productoMapper: ProductoMapper
+    +findAllByIdVendedor(idVendedor: String): List<ProductoDTO>
+    +findAllDisponibles(): List<ProductoDTO>
+}
+ProductoService --|> BaseServiceImpl
+
+class ReporteService {
+    -productoService: ProductoService
+    -usuarioService: UsuarioService
+    -truequeService: TruequeService
+    +save(reporteDTO: ReporteDTO): ReporteDTO
+}
+ReporteService --|> BaseServiceImpl
+class TruequeService {
+    -truequeRepository: TruequeRepository
+    -productoService: ProductoService
+    +findByUsuario(idUsuario: String): List<TruequeDTO>
+    +actualizarEstado(idTrueque: String, estado: EstadoTrueque): TruequeDTO
+}
+TruequeService --|> BaseServiceImpl
+class UsuarioService {
+    -usuarioRepository: UsuarioRepository
+    -passwordEncoder: PasswordEncoder
+    -usuarioMapper: UsuarioMapper
+    -penalizacionMapper: PenalizacionMapper
+    +findByEmailAndPassword(email: String, rawPassword: String): UsuarioDTO
+    +save(usuarioDTO: UsuarioDTO): UsuarioDTO
+    +saveAll(usuarioDTOs: List<UsuarioDTO>): List<UsuarioDTO>
+}
+UsuarioService --|> BaseServiceImpl
+
+BaseServiceImpl --> BaseMapper : has
+
+Usuario --> Penalizacion : has
+
+CategoriaService --> CategoriaRepository : has
+CategoriaService --> CategoriaMapper : has
+CategoriaService ..> Categoria: use
+
+ChatService --> ChatRepository : has
+ChatService --> ChatMessageMapper : has
+ChatService ..> ChatMessage : uses
+
+MediaService --> GridFsImageRepository : has
+MediaService ..> ImageResource : uses
+
+ProductoService --> ProductoRepository : has
+ProductoService --> ProductoMapper : has
+ProductoService ..> Producto : uses
+
+ReporteService --> ProductoService : has
+ReporteService --> UsuarioService : has
+ReporteService --> TruequeService : has
+ReporteService ..> Reporte : uses
+
+TruequeService --> TruequeRepository : has
+TruequeService --> TruequeMapper : has
+TruequeService --> ProductoService : has
+TruequeService ..> Trueque : uses
+
+UsuarioService --> UsuarioRepository : has
+UsuarioService --> UsuarioMapper : has
+UsuarioService --> PenalizacionMapper : has
+UsuarioService ..> Usuario : uses
+
+@enduml

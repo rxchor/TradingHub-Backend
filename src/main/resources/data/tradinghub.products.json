@@ -1,0 +1,98 @@
+[
+  {
+    "_id": {
+      "$oid": "6828c6e38235a24a9f9682c8"
+    },
+    "nombre": "PS5",
+    "descripcion": "Play 5 nueva",
+    "categoria": "Consolas",
+    "fotos": ["6828c6e38235a24a9f9682c6"],
+    "id_vendedor": "6828c62c8235a24a9f9682c4",
+    "no_disponible": false,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  },
+  {
+    "_id": {
+      "$oid": "6828c6f78235a24a9f9682cb"
+    },
+    "nombre": "Flauta",
+    "descripcion": "Flauta segunda mano",
+    "categoria": "Instrumentos",
+    "fotos": ["6828c6f78235a24a9f9682c9"],
+    "id_vendedor": "6828c62c8235a24a9f9682c4",
+    "no_disponible": false,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  },
+  {
+    "_id": {
+      "$oid": "6828c71b8235a24a9f9682ce"
+    },
+    "nombre": "Xbox One",
+    "descripcion": "Xbox one 500GB",
+    "categoria": "Consolas",
+    "fotos": ["6828c71b8235a24a9f9682cc"],
+    "id_vendedor": "6828c6478235a24a9f9682c5",
+    "no_disponible": false,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  },
+  {
+    "_id": {
+      "$oid": "6828c72d8235a24a9f9682d2"
+    },
+    "nombre": "Piano",
+    "descripcion": "Piano tercera mano clásico.",
+    "categoria": "Instrumentos",
+    "fotos": ["6828c72d8235a24a9f9682cf"],
+    "id_vendedor": "6828c6478235a24a9f9682c5",
+    "no_disponible": false,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  },
+  {
+    "_id": {
+      "$oid": "6838c08edad343246c7596ec"
+    },
+    "nombre": "Colección Narnia",
+    "descripcion": "Colección de Narnia entera",
+    "categoria": "Libros",
+    "fotos": ["6838c08edad343246c7596e9"],
+    "id_vendedor": "6838c05fdad343246c7596e8",
+    "no_disponible": true,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  },
+  {
+    "_id": {
+      "$oid": "6838c0d7dad343246c7596ef"
+    },
+    "nombre": "Mesita noche",
+    "descripcion": "Mesita de noche de madera",
+    "categoria": "Hogar",
+    "fotos": ["6838c0d6dad343246c7596ed"],
+    "id_vendedor": "6838c036dad343246c7596e7",
+    "no_disponible": true,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  },
+  {
+    "_id": {
+      "$oid": "6838c12cdad343246c7596f3"
+    },
+    "nombre": "Cluedo",
+    "descripcion": "Juego de mesa clásico",
+    "categoria": "Juguetes",
+    "fotos": ["6838c12cdad343246c7596f1"],
+    "id_vendedor": "6838c019dad343246c7596e6",
+    "no_disponible": false,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  },
+  {
+    "_id": {
+      "$oid": "6838c26edad343246c759700"
+    },
+    "nombre": "Cadáver",
+    "descripcion": "Real",
+    "categoria": "Otros",
+    "fotos": ["6838c26edad343246c7596fa"],
+    "id_vendedor": "6838c231dad343246c7596f9",
+    "no_disponible": false,
+    "_class": "dam.cook.tradinghub.model.entity.Producto"
+  }
+]

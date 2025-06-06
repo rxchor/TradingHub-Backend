@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "6827987190fb4106e17140cf"
+  },
+  "filename": "Teclado.jpg",
+  "length": {
+    "$numberLong": "198452"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-16T19:56:33.403Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6828bf7a8235a24a9f9682bd"
+  },
+  "filename": "Teclado2.jpg",
+  "length": {
+    "$numberLong": "65234"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-17T16:55:22.085Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6828c1c58235a24a9f9682c1"
+  },
+  "filename": "Teclado.jpg",
+  "length": {
+    "$numberLong": "198452"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-17T17:05:09.904Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6828c6e38235a24a9f9682c6"
+  },
+  "filename": "PS5.jpg",
+  "length": {
+    "$numberLong": "50499"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-17T17:26:59.406Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6828c6f78235a24a9f9682c9"
+  },
+  "filename": "Flauta.jpg",
+  "length": {
+    "$numberLong": "126488"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-17T17:27:19.893Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6828c71b8235a24a9f9682cc"
+  },
+  "filename": "Xbox one.jpg",
+  "length": {
+    "$numberLong": "23973"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-17T17:27:55.561Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6828c72d8235a24a9f9682cf"
+  },
+  "filename": "Piano.jpg",
+  "length": {
+    "$numberLong": "377165"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-17T17:28:13.634Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6838c08edad343246c7596e9"
+  },
+  "filename": "Libros.jpg",
+  "length": {
+    "$numberLong": "325068"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-29T20:16:14.858Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6838c0d6dad343246c7596ed"
+  },
+  "filename": "Mesita de noche.jpg",
+  "length": {
+    "$numberLong": "20997"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-29T20:17:26.999Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6838c12cdad343246c7596f1"
+  },
+  "filename": "Cluedo.jpg",
+  "length": {
+    "$numberLong": "102636"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-29T20:18:52.481Z"
+  },
+  "metadata": {
+    "_contentType": "image/jpeg"
+  }
+},
+{
+  "_id": {
+    "$oid": "6838c26edad343246c7596fa"
+  },
+  "filename": "Suicidio.gif",
+  "length": {
+    "$numberLong": "1245090"
+  },
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2025-05-29T20:24:14.114Z"
+  },
+  "metadata": {
+    "_contentType": "image/gif"
+  }
+}]
