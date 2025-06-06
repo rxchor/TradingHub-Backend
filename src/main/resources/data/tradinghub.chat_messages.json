@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6838c1d7dad343246c7596f5"
+  },
+  "id_sender": "6838c05fdad343246c7596e8",
+  "content": "Hola, la mesita de noche está nueva?",
+  "id_trueque": "6838c0e4dad343246c7596f0",
+  "timestamp": {
+    "$date": "2025-05-29T20:21:43.610Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.ChatMessage"
+},
+{
+  "_id": {
+    "$oid": "6838c1e9dad343246c7596f6"
+  },
+  "id_sender": "6838c036dad343246c7596e7",
+  "content": "Hola buenas! Si, y la colección de narnia está al completo o falta algún libro?",
+  "id_trueque": "6838c0e4dad343246c7596f0",
+  "timestamp": {
+    "$date": "2025-05-29T20:22:01.362Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.ChatMessage"
+},
+{
+  "_id": {
+    "$oid": "6838c1eedad343246c7596f7"
+  },
+  "id_sender": "6838c05fdad343246c7596e8",
+  "content": "Está al completo si!",
+  "id_trueque": "6838c0e4dad343246c7596f0",
+  "timestamp": {
+    "$date": "2025-05-29T20:22:06.018Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.ChatMessage"
+},
+{
+  "_id": {
+    "$oid": "6838c1f3dad343246c7596f8"
+  },
+  "id_sender": "6838c036dad343246c7596e7",
+  "content": "Vale de acuerdo, me interesa entonces",
+  "id_trueque": "6838c0e4dad343246c7596f0",
+  "timestamp": {
+    "$date": "2025-05-29T20:22:11.018Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.ChatMessage"
+},
+{
+  "_id": {
+    "$oid": "6838c2e2dad343246c759702"
+  },
+  "id_sender": "6838c05fdad343246c7596e8",
+  "content": "oye me envías ya la puta mesita de los cojones?",
+  "id_trueque": "6838c0e4dad343246c7596f0",
+  "timestamp": {
+    "$date": "2025-05-29T20:26:10.763Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.ChatMessage"
+}]

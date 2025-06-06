@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "6828c62c8235a24a9f9682c4"
+  },
+  "username": "Iker",
+  "email": "iker@example.com",
+  "password": "$2a$10$xrdlb5/q1EPMGZvpxR4n4.HFiaZfMxhlnl70BdUJSLDUNqCUGQmKi",
+  "num_tlfno": 634910856,
+  "administrador": true,
+  "penalizacion": null,
+  "_class": "dam.cook.tradinghub.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6828c6478235a24a9f9682c5"
+  },
+  "username": "Ricardo",
+  "email": "ricardo@example.com",
+  "password": "$2a$10$UCtZTnergyJCNBvpfaRAEeitBjLGswylCcGM4K8mymcSaipFANg6W",
+  "num_tlfno": 722623178,
+  "administrador": true,
+  "penalizacion": null,
+  "_class": "dam.cook.tradinghub.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6838c019dad343246c7596e6"
+  },
+  "username": "Raúl Pérez González",
+  "email": "raul@example.com",
+  "password": "$2a$10$6Oa44fKSM4Syk/PY7hsY8O9l415GVCQ5vaVNvoiW4URnGnC4Qre/u",
+  "num_tlfno": 666333777,
+  "administrador": false,
+  "_class": "dam.cook.tradinghub.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6838c036dad343246c7596e7"
+  },
+  "username": "Chari Hernández Rosa",
+  "email": "chari@example.com",
+  "password": "$2a$10$Z0v1CWLIYLCdRobtR.TKiOpVpLkPR/xxihfpABlzNAIk71d7RfJiK",
+  "num_tlfno": 666888444,
+  "administrador": false,
+  "_class": "dam.cook.tradinghub.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6838c05fdad343246c7596e8"
+  },
+  "username": "Fernando Lonza Méndez",
+  "email": "fernando@example.com",
+  "password": "$2a$10$FSs3RNXlgrr6PrMALCeKmuRRzG1oQpWu.JyqUVInYC4o064S36QhC",
+  "num_tlfno": 666111222,
+  "administrador": false,
+  "penalizacion": {
+    "motivo": "No se debe de insultar y/o hablar de mala manera a los otros usuarios.",
+    "id_admin": "6828c62c8235a24a9f9682c4",
+    "id_reporte": "6838c2fddad343246c759703",
+    "fecha_fin": {
+      "$date": "2025-06-29T00:00:00.000Z"
+    }
+  },
+  "_class": "dam.cook.tradinghub.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6838c231dad343246c7596f9"
+  },
+  "username": "Usuario Banneado",
+  "email": "banneado@example.com",
+  "password": "$2a$10$7DqlaUGe3OFilh9ZpNYdb.6AJxIeY2OD3RHErfLJ67qtJrJ4vkrOG",
+  "num_tlfno": 666555482,
+  "administrador": false,
+  "penalizacion": {
+    "motivo": "No es posible publicar productos de este tipo, ni siquiera de broma, tomaremos acciones frente a ello.",
+    "id_admin": "6828c62c8235a24a9f9682c4",
+    "id_reporte": "6838c28fdad343246c759701",
+    "fecha_fin": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "_class": "dam.cook.tradinghub.model.entity.Usuario"
+}]

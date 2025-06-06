@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "6838c28fdad343246c759701"
+  },
+  "idUsuarioReportante": "6838c036dad343246c7596e7",
+  "usernameReportante": "Chari Hernández Rosa",
+  "idUsuarioReportado": "6838c231dad343246c7596f9",
+  "usernameReportado": "Usuario Banneado",
+  "titulo": "Producto no adecuado",
+  "descripcion": "Ha publicado un producto de un cadáver",
+  "resuelto": true,
+  "tipoItem": "producto",
+  "idItem": "6838c26edad343246c759700",
+  "nombreItem": "Cadáver",
+  "fechaCreacion": {
+    "$date": "2025-05-29T20:24:47.237Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.Reporte"
+},
+{
+  "_id": {
+    "$oid": "6838c2fddad343246c759703"
+  },
+  "idUsuarioReportante": "6838c036dad343246c7596e7",
+  "usernameReportante": "Chari Hernández Rosa",
+  "idUsuarioReportado": "6838c05fdad343246c7596e8",
+  "usernameReportado": "Fernando Lonza Méndez",
+  "titulo": "Mal hablado",
+  "descripcion": "El usuario habla en un tono soez",
+  "resuelto": true,
+  "tipoItem": "trueque",
+  "idItem": "6838c0e4dad343246c7596f0",
+  "nombreItem": "Colección Narnia",
+  "fechaCreacion": {
+    "$date": "2025-05-29T20:26:37.847Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.Reporte"
+},
+{
+  "_id": {
+    "$oid": "6838c465dad343246c759704"
+  },
+  "idUsuarioReportante": "6838c036dad343246c7596e7",
+  "usernameReportante": "Chari Hernández Rosa",
+  "idUsuarioReportado": "6828c6478235a24a9f9682c5",
+  "usernameReportado": "Ricardo",
+  "titulo": "Producto no real",
+  "descripcion": "Es una imagen de google",
+  "resuelto": false,
+  "tipoItem": "producto",
+  "idItem": "6828c71b8235a24a9f9682ce",
+  "nombreItem": "Xbox One",
+  "fechaCreacion": {
+    "$date": "2025-05-29T20:32:37.769Z"
+  },
+  "_class": "dam.cook.tradinghub.model.entity.Reporte"
+}]

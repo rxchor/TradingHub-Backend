@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "6828c7c28235a24a9f9682d4"
+  },
+  "id_vendedor": "6828c62c8235a24a9f9682c4",
+  "id_interesado": "6828c6478235a24a9f9682c5",
+  "nombre_trueque": "PS5",
+  "imagen_preview": "6828c6e38235a24a9f9682c6",
+  "ids_productos_vendedor": [
+    "6828c6e38235a24a9f9682c8"
+  ],
+  "ids_productos_interesado": [
+    "6828c72d8235a24a9f9682d2"
+  ],
+  "estado": "PENDIENTE",
+  "_class": "dam.cook.tradinghub.model.entity.Trueque"
+},
+{
+  "_id": {
+    "$oid": "6828c7ca8235a24a9f9682d5"
+  },
+  "id_vendedor": "6828c62c8235a24a9f9682c4",
+  "id_interesado": "6828c6478235a24a9f9682c5",
+  "nombre_trueque": "Flauta",
+  "imagen_preview": "6828c6f78235a24a9f9682c9",
+  "ids_productos_vendedor": [
+    "6828c6f78235a24a9f9682cb"
+  ],
+  "ids_productos_interesado": [
+    "6828c71b8235a24a9f9682ce"
+  ],
+  "estado": "PENDIENTE",
+  "_class": "dam.cook.tradinghub.model.entity.Trueque"
+},
+{
+  "_id": {
+    "$oid": "6838c0e4dad343246c7596f0"
+  },
+  "id_vendedor": "6838c05fdad343246c7596e8",
+  "id_interesado": "6838c036dad343246c7596e7",
+  "nombre_trueque": "Colección Narnia",
+  "imagen_preview": "6838c08edad343246c7596e9",
+  "ids_productos_vendedor": [
+    "6838c08edad343246c7596ec"
+  ],
+  "ids_productos_interesado": [
+    "6838c0d7dad343246c7596ef"
+  ],
+  "estado": "ACEPTADO",
+  "_class": "dam.cook.tradinghub.model.entity.Trueque"
+},
+{
+  "_id": {
+    "$oid": "6838c13bdad343246c7596f4"
+  },
+  "id_vendedor": "6828c62c8235a24a9f9682c4",
+  "id_interesado": "6838c019dad343246c7596e6",
+  "nombre_trueque": "PS5",
+  "imagen_preview": "6828c6e38235a24a9f9682c6",
+  "ids_productos_vendedor": [
+    "6828c6e38235a24a9f9682c8"
+  ],
+  "ids_productos_interesado": [
+    "6838c12cdad343246c7596f3"
+  ],
+  "estado": "RECHAZADO",
+  "_class": "dam.cook.tradinghub.model.entity.Trueque"
+}]
